@@ -1,38 +1,178 @@
-.App {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+}
+
+table {
+  width: 100%;
+  background: #f0ee8b;
+}
+
+.location {
+  display: flex;
+  padding: 10px;
+  background: #7a6b50;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.pm2 {
+  padding: 10px;
+  background: #7a6b50;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.last-updated {
+  text-align: end;
+  padding: 10px;
+  background: #7a6b50;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.date-time {
+  text-align: end;
+  padding: 10px;
+}
+
+.value {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li {
+  margin-right: 20px;
+}
+
+header {
+  min-height: 250px;
+  background-color: red;
+  background: url('./images/wildfire-bg.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 20px;
+}
+
+.header-title {
   color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 600;
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.header-text {
+  color: white;
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first-div {
+  min-height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 90px;
+}
+
+.first-div-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.second-div {
+  background-color: #acf2c3;
+  padding: 40px 90px;
+}
+
+.second-div-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.third-div {
+  background-color: #bfde95;
+  padding: 40px 90px;
+}
+
+.third-div-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.third-div-subtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.third-div-text-ctn {
+  display: flex;
+}
+
+.fourth-div {
+  padding: 40px 90px;
+  background: #f0ee8b;
+}
+
+.fourth-div-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.fifth-div {
+  padding: 40px 90px;
+  background-color: #cfc99b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fifth-div-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.fifth-div-subtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+footer {
+  background: #858166;
+  color: white;
+  padding: 70px 20px;
+  text-transform: uppercase;
 }
