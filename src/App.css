@@ -5,7 +5,12 @@
 }
 
 body {
+  width: 100%;
+}
+
+.container {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 table {
@@ -14,11 +19,11 @@ table {
 }
 
 .location {
-  display: flex;
   padding: 10px;
   background: #7a6b50;
   text-transform: uppercase;
   font-weight: 400;
+  text-align: start;
 }
 
 .pm2 {
@@ -71,6 +76,14 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-ctn {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-title {
@@ -118,6 +131,14 @@ header {
 .third-div {
   background-color: #bfde95;
   padding: 40px 90px;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.third-div-ctn {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .third-div-title {
@@ -155,6 +176,14 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.fifth-div-ctn {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .fifth-div-title {
@@ -175,4 +204,18 @@ footer {
   color: white;
   padding: 70px 20px;
   text-transform: uppercase;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-ctn {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .fourth-div {
+    padding: 40px 10px;
+  }
 }
